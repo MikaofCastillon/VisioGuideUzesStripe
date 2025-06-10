@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accès Visioguide</title>
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 60px auto;
+    }
+    stripe-buy-button {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Accès à votre visioguide</h1>
+  <p>Cliquez ci-dessous pour payer en toute sécurité par carte bancaire :</p>
+
+  <stripe-buy-button
+    buy-button-id="buy_btn_1RYZ7OD7QFD2kk1Vn0lui5ZM"
+    publishable-key="pk_test_51RYYyYD7QFD2kk1VDkfOhviWYTDLVeSNKmpRr0LjmKAel7moA26NZiwjrj9jsNHFZR5ouot0KWQ6sQcfxHEhYIvk00QhQG5dNH">
+  </stripe-buy-button>
+</body>
+</html>
