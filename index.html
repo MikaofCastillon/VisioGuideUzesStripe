@@ -3,29 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Accès Visioguide</title>
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
   <style>
     body {
       font-family: sans-serif;
       text-align: center;
       margin: 80px auto;
-      background-color: #f5f5f5;
     }
-    h1 {
-      font-size: 2rem;
-    }
-    .stripe-button {
+    .stripe-wrapper {
       display: inline-block;
-      padding: 24px 48px; /* +50% */
-      font-size: 30px;     /* +50% */
-      background-color: #635bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: background-color 0.3s;
+      transform: scale(1.5); /* Zoom ×1.5 */
+      transform-origin: top center;
       margin-top: 40px;
-    }
-    .stripe-button:hover {
-      background-color: #4a44e1;
     }
   </style>
 </head>
@@ -33,6 +22,11 @@
   <h1>Accès à votre visioguide</h1>
   <p>Paiement sécurisé par carte bancaire :</p>
 
-  <a href="https://buy.stripe.com/3cI14n8zgbzKgeO7CS0Jq00" class="stripe-button">Payer 5 €</a>
+  <div class="stripe-wrapper">
+    <stripe-buy-button
+      buy-button-id="buy_btn_1RYZ7OD7QFD2kk1Vn0lui5ZM"
+      publishable-key="pk_live_...">
+    </stripe-buy-button>
+  </div>
 </body>
 </html>
