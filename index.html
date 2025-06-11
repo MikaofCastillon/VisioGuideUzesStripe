@@ -9,10 +9,15 @@
       font-family: sans-serif;
       text-align: center;
       margin: 80px auto;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    h1 {
+      font-size: 2rem;
     }
     .stripe-wrapper {
       display: inline-block;
-      transform: scale(1.5); /* Zoom ×1.5 */
+      transform: scale(1.5); /* Agrandit le bouton */
       transform-origin: top center;
       margin-top: 40px;
     }
@@ -20,12 +25,12 @@
 </head>
 <body>
   <h1>Accès à votre visioguide</h1>
-  <p>Paiement sécurisé par carte bancaire :</p>
+  <p>Prix : 10,90 € — Paiement sécurisé par carte bancaire</p>
 
   <div class="stripe-wrapper">
     <stripe-buy-button
-      buy-button-id="buy_btn_1RYZ7OD7QFD2kk1Vn0lui5ZM"
-      publishable-key="pk_live_...">
+      buy-button-id="buy_btn_1RYhktDmesPmwWSf5q08Gy1W"
+      publishable-key="pk_live_51RYYyODmesPmwWSfUPP0bMvNOUZYDzNzrm7Ehz7e9186562nO4s215lP8UFk8ZSJgwLCHxe3d87abKVQju3dAInd00FXD0SQxx">
     </stripe-buy-button>
   </div>
 </body>
